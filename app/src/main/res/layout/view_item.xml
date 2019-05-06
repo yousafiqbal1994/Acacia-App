@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="8dp">
+
+    <LinearLayout
+        android:id="@+id/buttonBar"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/viewButton"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            app:icon="@drawable/ic_action_open"
+            app:iconSize="24dp" />
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/editButton"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            app:icon="@drawable/ic_action_edit"
+            app:iconSize="24dp" />
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/deleteButton"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            app:icon="@drawable/ic_action_delete"
+            app:iconSize="24dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/buttonBar"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/idView"
+            style="@style/TextAppearance.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Id"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/typeView"
+            style="@style/TextAppearance.AppCompat.Menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Item Type" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
